@@ -17,7 +17,7 @@ using System.Web.Http.Tracing;
 
 namespace todolist_completeService.Controllers
 {
-    //[Authorize]
+    [Authorize]
     [MobileAppController]
     public class UpdateTagsController : ApiController
     {

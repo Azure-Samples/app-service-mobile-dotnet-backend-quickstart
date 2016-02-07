@@ -19,7 +19,7 @@ using System.Web.Http.Tracing;
 
 namespace todolist_completeService.Controllers
 {
-    //[Authorize]
+    [Authorize]
     public class TodoItemController : TableController<TodoItem>
     {
         protected override void Initialize(HttpControllerContext controllerContext)
