@@ -1,8 +1,8 @@
 # App Service Mobile completed quickstart for .NET backend
-This repository contains a .NET backend Mobile App project based on the App Service Mobile Apps quickstart project, which you can download from the [Azure portal](https://portal.azure.com). This project has been enhanced by the addition of offline sync, authentication, and push notification functionality. This sample demonstrates how to best integrate the various Mobile Apps features. To learn how to download the Windows quickstart app backend project from the portal, see [Create a Windows app](https://azure.microsoft.com/documentation/articles/app-service-mobile-windows-store-dotnet-get-started/). This readme topic contains the following information to help you run the sample app project and to better understand the design decisions.
+This repository contains a .NET backend Mobile App project based on the App Service Mobile Apps quickstart project, which you can download from the [Azure portal](https://portal.azure.com). This project has been enhanced by the addition of offline sync, authentication, and push notification functionality. This sample demonstrates how to best integrate the various Mobile Apps features. This readme topic contains the following information to help you run the sample app project and to better understand the design decisions.
 
 + [Overview](#overview)
-+ [Configure the .NET backend project](#configure-the-net-backend-project)
++ [Create a new .NET backend Mobile App](#create-a-new-net-backend-mobile-app)
 + [Configure authentication](#configure-authentication)
 + [Configure push notifications](#configure-push-notifications)
 + [Publish the project to Azure](#publish-the-project-to-azure)
@@ -20,9 +20,9 @@ The project in this repository is equivalent to downloading the quickstart .NET 
 + [Add authentication to your Windows app](https://azure.microsoft.com/en-us/documentation/articles/app-service-mobile-windows-store-dotnet-get-started-users/)
 + [Add push notifications to your Windows app](https://azure.microsoft.com/en-us/documentation/articles/app-service-mobile-windows-store-dotnet-get-started-push/) 
 
-## Configure the .NET backend project
+## Create a new .NET backend Mobile App 
 
-The first step is to create a new Mobile App backend in Azure and configure and publish this project to that backend. You can do this either by completing the [quickstart tutorial](https://azure.microsoft.com/documentation/articles/app-service-mobile-windows-store-dotnet-get-started/) or by [following these steps](https://github.com/Azure/azure-content-pr/blob/master/includes/app-service-mobile-dotnet-backend-create-new-service.md).
+The first step is to create a new Mobile App backend in Azure. You can do this either by completing the [quickstart tutorial](https://azure.microsoft.com/documentation/articles/app-service-mobile-windows-store-dotnet-get-started/) or by [following these steps](https://github.com/Azure/azure-content-pr/blob/master/includes/app-service-mobile-dotnet-backend-create-new-service.md).
 
 ## Configure authentication
 
