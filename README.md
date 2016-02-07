@@ -2,15 +2,14 @@
 This repository contains a .NET backend Mobile App project based on the App Service Mobile Apps quickstart project, which you can download from the [Azure portal](https://portal.azure.com). This project has been enhanced by the addition of offline sync, authentication, and push notification functionality. This sample demonstrates how to best integrate the various Mobile Apps features. To learn how to download the Windows quickstart app backend project from the portal, see [Create a Windows app](https://azure.microsoft.com/documentation/articles/app-service-mobile-windows-store-dotnet-get-started/). This readme topic contains the following information to help you run the sample app project and to better understand the design decisions.
 
 + [Overview](#overview)
-+ [Configure the Mobile App backend](#configure-the-mobile-app-backend)
-+ [Configure the Windows app](#configure-the-windows-app)
-	+ [Configure authentication](#configure-authentication)
-	+ [Configure push notifications](#configure-push-notifications)
-+ [Running the app](#running-the-app)
++ [Configure the .NET backend project](#configure-the-net-backend-project)
++ [Configure authentication](#configure-authentication)
++ [Configure push notifications](#configure-push-notifications)
++ [Publish the project to Azure](#publish-the-project-to-azure)
 + [Implementation notes](#implementation-notes)
+	+ [Push to users](#push-to-users)
 	+ [Template push notification registration](#template-push-notification-registration)
 	+ [Client-added push notification tags](#client-added-push-notification-tags)
-	+ [Authenticate first](#authenticate-first)
 
 To learn more about a Mobile Apps .NET backend project, see [Work with the .NET backend server SDK for Azure Mobile Apps](https://azure.microsoft.com/documentation/articles/app-service-mobile-dotnet-backend-how-to-use-server-sdk/).
 
