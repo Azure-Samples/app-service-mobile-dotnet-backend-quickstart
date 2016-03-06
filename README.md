@@ -109,7 +109,7 @@ The push notification tutorial sends broadcast push notifications to all registr
         throw new HttpResponseException(System.Net.HttpStatusCode.InternalServerError);
     }
 
-If the user has registered on multiple devices, each device will get a notification.
+When the user has registered on multiple devices, each device will get a notification. When registering for push notifications from an authenticated client, make sure that authentication is complete before attempting registration.
 
 ###Template push notification registration
 The original push notification tutorial used native registrations. This sample has been changed to use a template registration, which makes it easier to send push notifications to users on multiple clients from a single **send** method call. You can see in the above code that the **SendTemplateNotificationAsync()** method is called, which sends a notification to all platforms.
