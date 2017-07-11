@@ -16,18 +16,18 @@ This repository contains a .NET backend Mobile App project based on the App Serv
 	+ [Template push notification registration](#template-push-notification-registration)
 	+ [Client-added push notification tags](#client-added-push-notification-tags)
 
-To learn more about a Mobile Apps .NET backend project, see [Work with the .NET backend server SDK for Azure Mobile Apps](https://azure.microsoft.com/documentation/articles/app-service-mobile-dotnet-backend-how-to-use-server-sdk/).
+To learn more about a Mobile Apps .NET backend project, see [Work with the .NET backend server SDK for Azure Mobile Apps](https://docs.microsoft.com/azure/app-service-mobile/app-service-mobile-dotnet-backend-how-to-use-server-sdk/).
 
 ##Overview
 The project in this repository is equivalent to downloading the quickstart .NET backend project from the portal and then completing the following Mobile Apps tutorials:
 
-+ [Enable offline sync for your Windows app](https://azure.microsoft.com/documentation/articles/app-service-mobile-windows-store-dotnet-get-started-offline-data/)
++ [Enable offline sync for your Windows app](https://docs.microsoft.com/azure/app-service-mobile/app-service-mobile-windows-store-dotnet-get-started-offline-data/)
 + [Add authentication to your Windows app](https://azure.microsoft.com/en-us/documentation/articles/app-service-mobile-windows-store-dotnet-get-started-users/)
 + [Add push notifications to your Windows app](https://azure.microsoft.com/en-us/documentation/articles/app-service-mobile-windows-store-dotnet-get-started-push/) 
 
 ## Create a new .NET backend Mobile App 
 
-The first step is to create a new Mobile App backend in Azure. You can do this either by completing the [quickstart tutorial](https://azure.microsoft.com/documentation/articles/app-service-mobile-windows-store-dotnet-get-started/) or by [following these steps](https://github.com/MicrosoftDocs/azure-content/blob/master/includes/app-service-mobile-dotnet-backend-create-new-service.md).
+The first step is to create a new Mobile App backend in Azure. You can do this either by completing the [quickstart tutorial](https://docs.microsoft.com/azure/app-service-mobile/app-service-mobile-windows-store-dotnet-get-started/) or by [following these steps](https://github.com/MicrosoftDocs/azure-docs/blob/master/includes/app-service-mobile-dotnet-backend-create-new-service.md).
 
 ## Configure authentication
 
@@ -35,11 +35,11 @@ Because both the client and backend are configured to use authentication, you mu
 
 Follow the instructions in the topic to configure the Mobile App backend to use one of the following authentication providers:
 
-+ [AAD](https://azure.microsoft.com/documentation/articles/app-service-mobile-how-to-configure-active-directory-authentication/)
-+ [Facebook](https://azure.microsoft.com/documentation/articles/app-service-mobile-how-to-configure-facebook-authentication/)
-+ [Google](https://azure.microsoft.com/documentation/articles/app-service-mobile-how-to-configure-google-authentication/)
-+ [Microsoft account](https://azure.microsoft.com/documentation/articles/app-service-mobile-how-to-configure-microsoft-authentication/)
-+ [Twitter](https://azure.microsoft.com/documentation/articles/app-service-mobile-how-to-configure-twitter-authentication/)
++ [AAD](https://docs.microsoft.com/azure/app-service-mobile/app-service-mobile-how-to-configure-active-directory-authentication/)
++ [Facebook](https://docs.microsoft.com/azure/app-service-mobile/app-service-mobile-how-to-configure-facebook-authentication/)
++ [Google](https://docs.microsoft.com/azure/app-service-mobile/app-service-mobile-how-to-configure-google-authentication/)
++ [Microsoft account](https://docs.microsoft.com/azure/app-service-mobile/app-service-mobile-how-to-configure-microsoft-authentication/)
++ [Twitter](https://docs.microsoft.com/azure/app-service-mobile/app-service-mobile-how-to-configure-twitter-authentication/)
 
 The `[Authorize]` attribute applied to the controllers means that requests must contain an App Service authentication header (*X-ZUMO-AUTH*) with a valid token. To test authentication when running locally, you must also set the following app settings in the Web.config file:
 
@@ -51,9 +51,9 @@ The `[Authorize]` attribute applied to the controllers means that requests must 
 
 You need to configure push notifications by registering your Windows app with the Windows Store then storing the app's package SID and client secret in the Mobile App backend. These credentials are used by Azure to connect to Windows Notification Service (WNS) to send push notifications. Complete the following sections of the push notifications tutorial to configure push notifications:
 
-1. [Create a Notification Hub](https://github.com/MicrosoftDocs/azure-content/blob/master/includes/app-service-mobile-create-notification-hub.md)
-2. [Register your app for push notifications](https://github.com/MicrosoftDocs/azure-content/blob/master/includes/app-service-mobile-register-wns.md)
-3. [Configure the backend to send push notifications](https://github.com/MicrosoftDocs/azure-content/blob/master/includes/app-service-mobile-configure-wns.md)
+1. [Create a Notification Hub](https://github.com/MicrosoftDocs/azure-docs/blob/master/includes/app-service-mobile-create-notification-hub.md)
+2. [Register your app for push notifications](https://github.com/MicrosoftDocs/azure-docs/blob/master/includes/app-service-mobile-register-wns.md)
+3. [Configure the backend to send push notifications](https://github.com/MicrosoftDocs/azure-docs/blob/master/includes/app-service-mobile-configure-wns.md)
 
 For local testing, you must also replace the following settings values in the Web.config file with values from the notification hub used by your Mobile App backend:
 
@@ -114,7 +114,7 @@ When the user has registered on multiple devices, each device will get a notific
 ###Template push notification registration
 The original push notification tutorial used native registrations. This sample has been changed to use a template registration, which makes it easier to send push notifications to users on multiple clients from a single **send** method call. You can see in the above code that the **SendTemplateNotificationAsync()** method is called, which sends a notification to all platforms.
 
-For more information, see [How to: Register push templates to send cross-platform notifications](https://azure.microsoft.com/documentation/articles/app-service-mobile-dotnet-how-to-use-client-library/#how-to-register-push-templates-to-send-cross-platform-notifications).
+For more information, see [How to: Register push templates to send cross-platform notifications](https://docs.microsoft.com/azure/app-service-mobile/app-service-mobile-dotnet-how-to-use-client-library/#how-to-register-push-templates-to-send-cross-platform-notifications).
 
 ###Client-added push notification tags
 When a mobile app registers for push notifications using an Azure App Service Mobile Apps backend, there are two default tags that can get added to the registration in Azure Notification Hubs: the installation ID, which is unique to the app on a given device, and the user ID, which is only added when the user has been previously authenticated. Any other tags that get supplied by the client are ignored, which is by design. (Note that this differs from Mobile Services, where the client could supply any tag and there were hooks into the registration process on the backend to validate tags on incoming registrations.) 
