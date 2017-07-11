@@ -27,7 +27,7 @@ The project in this repository is equivalent to downloading the quickstart .NET 
 
 ## Create a new .NET backend Mobile App 
 
-The first step is to create a new Mobile App backend in Azure. You can do this either by completing the [quickstart tutorial](https://azure.microsoft.com/documentation/articles/app-service-mobile-windows-store-dotnet-get-started/) or by [following these steps](https://github.com/Azure/azure-content-pr/blob/master/includes/app-service-mobile-dotnet-backend-create-new-service.md).
+The first step is to create a new Mobile App backend in Azure. You can do this either by completing the [quickstart tutorial](https://azure.microsoft.com/documentation/articles/app-service-mobile-windows-store-dotnet-get-started/) or by [following these steps](https://github.com/MicrosoftDocs/azure-content/blob/master/includes/app-service-mobile-dotnet-backend-create-new-service.md).
 
 ## Configure authentication
 
@@ -51,9 +51,9 @@ The `[Authorize]` attribute applied to the controllers means that requests must 
 
 You need to configure push notifications by registering your Windows app with the Windows Store then storing the app's package SID and client secret in the Mobile App backend. These credentials are used by Azure to connect to Windows Notification Service (WNS) to send push notifications. Complete the following sections of the push notifications tutorial to configure push notifications:
 
-1. [Create a Notification Hub](https://github.com/Azure/azure-content-pr/blob/master/includes/app-service-mobile-create-notification-hub.md)
-2. [Register your app for push notifications](https://github.com/Azure/azure-content-pr/blob/master/includes/app-service-mobile-register-wns.md)
-3. [Configure the backend to send push notifications](https://github.com/Azure/azure-content-pr/blob/master/includes/app-service-mobile-configure-wns.md)
+1. [Create a Notification Hub](https://github.com/MicrosoftDocs/azure-content/blob/master/includes/app-service-mobile-create-notification-hub.md)
+2. [Register your app for push notifications](https://github.com/MicrosoftDocs/azure-content/blob/master/includes/app-service-mobile-register-wns.md)
+3. [Configure the backend to send push notifications](https://github.com/MicrosoftDocs/azure-content/blob/master/includes/app-service-mobile-configure-wns.md)
 
 For local testing, you must also replace the following settings values in the Web.config file with values from the notification hub used by your Mobile App backend:
 
