@@ -51,7 +51,7 @@ The `[Authorize]` attribute applied to the controllers means that requests must 
 
 You need to configure push notifications by registering your Windows app with the Windows Store then storing the app's package SID and client secret in the Mobile App backend. These credentials are used by Azure to connect to Windows Notification Service (WNS) to send push notifications. Complete the following sections of the push notifications tutorial to configure push notifications:
 
-1. [Create a Notification Hub](https://github.com/MicrosoftDocs/azure-docs/blob/master/includes/app-service-mobile-create-notification-hub.md)
+1. [Create a Notification Hub](https://github.com/MicrosoftDocs/azure-docs/blob/master/includes/app-service-mobile-configure-notification-hub.md)
 2. [Register your app for push notifications](https://github.com/MicrosoftDocs/azure-docs/blob/master/includes/app-service-mobile-register-wns.md)
 3. [Configure the backend to send push notifications](https://github.com/MicrosoftDocs/azure-docs/blob/master/includes/app-service-mobile-configure-wns.md)
 
